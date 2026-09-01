@@ -788,53 +788,36 @@ a {
   z-index: 1;
 }
 
-.about-image-placeholder {
+.about-image {
+  position: relative;
+  height: 520px;
+  z-index: 1;
+}
+
+.about-photo {
   width: 100%;
   height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  display: block;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
-
   border: 1px solid rgba(41, 169, 255, 0.2);
-
-  background:
-    linear-gradient(
-      145deg,
-      #10243a,
-      #050b14
-    );
-
-  color: #58728c;
-
-  font-size: 12px;
-  font-weight: 600;
-
-  letter-spacing: 2px;
-
   box-shadow:
     0 25px 70px rgba(0, 0, 0, 0.3);
 }
 
 .about-image::before {
   content: "";
-
   position: absolute;
-
   left: -12px;
   top: 35px;
-
   width: 3px;
   height: 150px;
-
   background:
     linear-gradient(
       #29a9ff,
       transparent
     );
-
   z-index: 2;
 }
 

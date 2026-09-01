@@ -6,7 +6,9 @@ import {
   Check,
   MessageCircle
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import "./App.css";
+import profissionalImage from "./assets/profissional.jpg";
 import tecnico from "./assets/tecnico.png";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -291,18 +293,19 @@ function App() {
 
   </div>
 
-</section>{/* SOBRE A MARCONDES */}
+{/* SOBRE A MARCONDES */}
 
 <section className="about" id="sobre">
 
   <div className="about-image">
 
-    <div className="about-image-placeholder">
-      FOTO DO PROFISSIONAL
-    </div>
+    <img
+      src={profissionalImage}
+      alt="Profissional da Marcondes Refrigeração & Elétrica"
+      className="about-photo"
+    />
 
   </div>
-
 
   <div className="about-content">
 
@@ -337,6 +340,8 @@ function App() {
     </a>
 
   </div>
+
+</section>
 
 </section>{/* SERVIÇOS DETALHADOS */}
 
@@ -406,7 +411,7 @@ function App() {
 </div>
 
       <h3>
-        Refrigeração
+        Geladeira
       </h3>
 
       <p>
@@ -415,10 +420,10 @@ function App() {
       </p>
 
       <ul>
-        <li>Manutenção</li>
-        <li>Diagnóstico</li>
-        <li>Reparos</li>
-        <li>Manutenção preventiva</li>
+        <li>Troca de Compressor</li>
+        <li>Carga de Gás</li>
+        <li>Sensores & Resistência</li>
+        <li>Gacheta - Borracha da Porta</li>
       </ul>
 
     </article>
@@ -695,10 +700,7 @@ function App() {
   className="whatsapp-float"
   aria-label="Falar com a Marcondes pelo WhatsApp"
 >
-  <MessageCircle
-    size={30}
-    strokeWidth={2}
-  />
+  <FaWhatsapp size={32} />
 </a>
     </div>
   );
