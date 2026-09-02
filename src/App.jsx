@@ -7,6 +7,7 @@ import {
   MessageCircle
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import logo from "./assets/logo.png";
 import "./App.css";
 import profissionalImage from "./assets/profissional.jpg";
 import tecnico from "./assets/tecnico.png";
@@ -18,10 +19,20 @@ function App() {
       {/* HEADER */}
       <header className="header">
 
-        <div className="logo">
-          <strong>MARCONDES</strong>
-          <span>REFRIGERAÇÃO & ELÉTRICA</span>
-        </div>
+        <div className="brand">
+
+  <img
+    src={logo}
+    alt="Logo Marcondes Refrigeração & Elétrica"
+    className="brand-logo"
+  />
+
+  <div className="logo">
+    <strong>MARCONDES</strong>
+    <span>REFRIGERAÇÃO & ELÉTRICA</span>
+  </div>
+
+</div>
 
         <nav className={`nav ${menuOpen ? "nav-open" : ""}`}>
 
